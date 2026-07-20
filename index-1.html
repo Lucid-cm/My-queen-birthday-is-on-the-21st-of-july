@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday, Adeola Fajobi 🎂</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Poppins:wght@300;400;500;600&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="confetti"></canvas>
+
+<!-- GATE -->
+<div id="gate">
+  <div class="envelope" id="envelope"><span>tap to open, Mum</span></div>
+  <div class="gate-hint">a little something from your children</div>
+</div>
+
+<button id="musicToggle" title="Toggle music">🔈</button>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="eyebrow">A tribute, baked with love</div>
+  <div class="photo-frame" id="heroPhoto" title="Add a photo of Mum">
+    <span id="heroPhotoIcon">📷</span>
+    <span class="add-label">add photo</span>
+  </div>
+  <input type="file" accept="image/*" id="heroPhotoInput" style="display:none">
+  <h1>Adeola Fajobi
+    <span class="script">our source, our sauce, our everything</span>
+  </h1>
+  <p class="tagline">Happy Birthday, Mum. Every year that passes, we love you more than the last — and today, it's your turn to be celebrated.</p>
+  <div class="scroll-hint">scroll down ↓</div>
+</section>
+
+<!-- RECIPE CARD -->
+<section id="ingredients">
+  <div class="section-head reveal">
+    <span class="tab">The Recipe</span>
+    <h2>What Mum Is Made Of</h2>
+  </div>
+  <div class="recipe-card reveal">
+    <ul class="ingredients">
+      <li><span class="ico">💜</span><span><b>Strength</b> — enough to outweigh ten men, and still stand tall.</span></li>
+      <li><span class="ico">🍰</span><span><b>Baking</b> — turning simple flour and sugar into pure joy.</span></li>
+      <li><span class="ico">🏡</span><span><b>Provision</b> — a home where nothing ever felt lacking.</span></li>
+      <li><span class="ico">🧵</span><span><b>Care</b> — for Olamide, David and Okikiola, without pause.</span></li>
+      <li><span class="ico">✨</span><span><b>Inspiration</b> — a source and a sauce for everyone around her.</span></li>
+      <li><span class="ico">🕊️</span><span><b>Grace</b> — carrying every responsibility with quiet dignity.</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- MESSAGES -->
+<section id="messages">
+  <div class="section-head reveal">
+    <span class="tab">Words For You</span>
+    <h2>Mum, In Case You Ever Forget</h2>
+  </div>
+  <div class="messages">
+    <div class="msg-card reveal"><span class="mark">"</span><p>Mum, you've always been a source and a sauce of inspiration to everyone.</p></div>
+    <div class="msg-card reveal"><span class="mark">"</span><p>You took every responsibility — in fact, leveraging 10x, dad's in the world couldn't replace you. You are a strong woman.</p></div>
+    <div class="msg-card reveal"><span class="mark">"</span><p>You provided, bred us to this stage, clothed us, fed us, and made us feel nothing like lacking.</p></div>
+    <div class="msg-card reveal"><span class="mark">"</span><p>Every meal you made was seasoned with love long before it ever touched the pot.</p></div>
+    <div class="msg-card reveal"><span class="mark">"</span><p>Olamide, David and Okikiola carry your strength in their bones and your warmth in their hearts.</p></div>
+    <div class="msg-card reveal"><span class="mark">"</span><p>You turned every hard season into something sweet — the way only a true baker of life could.</p></div>
+    <div class="msg-card reveal"><span class="mark">"</span><p>Your hands built a home. Your heart built a family.</p></div>
+    <div class="msg-card reveal"><span class="mark">"</span><p>You are the flour that holds it all together — quiet, essential, never asking for credit.</p></div>
+  </div>
+</section>
+
+<!-- FAMILY -->
+<section id="family">
+  <div class="section-head reveal">
+    <span class="tab">Her Why</span>
+    <h2>The Ones She Pours Into</h2>
+  </div>
+  <div class="family-wrap reveal">
+    <div class="kid" data-kid="0" title="Add Olamide's photo"><span class="heart">💗</span><span class="kid-label">Olamide</span></div>
+    <div class="kid" data-kid="1" title="Add David's photo"><span class="heart">💜</span><span class="kid-label">David</span></div>
+    <div class="kid" data-kid="2" title="Add Okikiola's photo"><span class="heart">💗</span><span class="kid-label">Okikiola</span></div>
+  </div>
+  <input type="file" accept="image/*" id="kidPhotoInput" style="display:none">
+  <p class="reveal" style="text-align:center;margin-top:1.2rem;font-size:.85rem;opacity:.6;">tap a name to add their photo</p>
+</section>
+
+<!-- LOVE COUNTER -->
+<section id="love" style="padding-top:0;">
+  <div class="love-wrap reveal">
+    <button id="loveBtn">Send Mum More Love 💗</button>
+    <span id="loveCount">0 hearts sent so far</span>
+  </div>
+</section>
+
+<!-- CERTIFICATE -->
+<section id="certificate-section">
+  <div class="section-head reveal">
+    <span class="tab">Officially Recognized</span>
+    <h2>Her Certificate of Honor</h2>
+  </div>
+  <div id="certificate" class="reveal">
+    <div class="cert-eyebrow">Certificate of Honor</div>
+    <h3>This certifies that</h3>
+    <div class="cert-name">Adeola Fajobi</div>
+    <p>is hereby recognized, with all the love of her children, for a lifetime of devotion.</p>
+    <div class="cert-titles">
+      <span>🍰 Baking Queen</span>
+      <span>💪 World's Strongest Mum</span>
+      <span>🏡 Provider Extraordinaire</span>
+      <span>💜 CEO of Unconditional Love</span>
+    </div>
+    <div class="cert-date" id="certDate"></div>
+  </div>
+  <div style="text-align:center;">
+    <button id="downloadCert">Save Certificate as Image</button>
+  </div>
+</section>
+
+<!-- CAKE -->
+<section class="cake-section" id="cake">
+  <div class="section-head reveal">
+    <span class="tab">Make A Wish</span>
+    <h2>Blow Out Her Candles</h2>
+  </div>
+  <p class="cake-instructions reveal">Tap each flame, Mum 🕯️</p>
+  <div class="cake-wrap reveal">
+    <div class="candles">
+      <div class="candle" data-candle><div class="flame"></div><div class="smoke"></div></div>
+      <div class="candle" data-candle><div class="flame"></div><div class="smoke"></div></div>
+      <div class="candle" data-candle><div class="flame"></div><div class="smoke"></div></div>
+    </div>
+    <div class="cake-body">
+      <div class="tier top"></div>
+      <div class="tier mid"></div>
+      <div class="tier base"></div>
+    </div>
+    <div class="cake-label">Baked with a lifetime of love 🩷</div>
+  </div>
+
+  <div class="final-msg" id="finalMsg">
+    <h2>Happy Birthday, Mum!</h2>
+    <p>May this new year bring you the same joy, sweetness, and peace you've given all of us, every single day. We love you beyond words — Adeola Fajobi, forever our source and our sauce. 💜🩷</p>
+  </div>
+</section>
+
+<footer class="reveal">made with love, for the woman who made everything possible.</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
